@@ -18,7 +18,7 @@ if (isset($_POST['Listo'])) {
   $InserDatos = "INSERT INTO registrar (`UserID`,`Nombre`,`Correo`,`Password`,`Fecha`) VALUES (NULL,'$Nombres','$Emails','$Passwords','$Dates')";
   $Ejecutar = mysqli_query($Conexiones,$InserDatos);
 
-      header("Location: Registrar.php");
+      header("Location: http://localhost/PAGINA%20TOTAL/Resgrito/IniciarSe.php");
     exit();
 
   }
@@ -57,7 +57,7 @@ if (isset($_POST['Listo'])) {
             <input name="Nombre" required type="text"  placeholder="Name" >
             <label ></label>
           
-            <input name="Email" required type="text"  placeholder="Name@example.com">
+            <input name="Email" required type="email"  placeholder="Name@example.com">
             <label ></label>
 
             <input name="Contrasena" required type="password"  placeholder="Password">
@@ -66,10 +66,11 @@ if (isset($_POST['Listo'])) {
             <input name="Fecha" required type="date"  placeholder="DD/MM/AAAA">
             <label ></label>
       
-            <Button class ="Listo" name = "Listo" type = "submit" >
-              LISTO
+            <Button class ="Listo" name = "Listo" type = "submit">
+            LISTO
             </Button>
     
+
           </div> 
       </Div>
   </form>             
